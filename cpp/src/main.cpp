@@ -1,0 +1,33 @@
+//#include "linklist/_1.h"
+//#include  "linklist/_2.h"
+//#include  "linklist/_3.h"
+//#include "linklist/_4.h"
+//#include "linklist/_5.h"
+//#include "linklist/_6.h"
+//#include "linklist/_7.h"
+//#include "linklist/_8.h"
+//#include "test1/_1.h"
+//#include "test1/_2.h"
+// #include "test2/_1.h"
+//#include "tupletest.h"
+
+//#include "test3/_1.h"
+//#include "test3/_2.h"
+//#include "test3/_3.h"
+
+//#include "lc_100/_1.h"
+//#include "lc_100/_2.h"
+//#include "lc_100/_018.h"
+//#include "lc_100/_078.h"
+//#include "lc_100/_080.h"
+//#include "lc_100/_100.h"
+//#include "lc_100/_046.h"
+// #include "lc_top_100/_20.h"
+// #include "lc_top_100/_26.h"
+// #include "playground/cppmove.h"
+// #include "lc_/_16.h"
+
+
+
+// #include "playground/static_func_inc/main.h"
+#include "playground/list_join/list_join.h"
