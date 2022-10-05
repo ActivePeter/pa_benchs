@@ -1,6 +1,21 @@
 # pa_code_playground
-record my bench tests
+record my code tests
 
+# cpp
+
+## list_join
+
+std list容器的拼接，裁剪
+
+## cppmove
+
+c++ 实现类似rust的栈上move，只有在最终move处析构才会触发最初设置的回调函数
+
+## static_func_inc
+
+c++相互引用例子，必须要将实现放到c文件中, 头文件中互相向前声明
+
+# rust bench
 ### 顺序bench
 
 1.首先测试std有锁和无锁的连续写（锁没有影响
