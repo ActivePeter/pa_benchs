@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.10)
 project(leetcode)
 
+function(load_cmake_config path)
+    file(STRINGS "${PROJECT_SOURCE_DIR}/cmake_config.txt " ret LIMIT_COUNT 1 REGEX "${path} ?")
+    string(REGEX REPLACE "${path} " "" ret ${ret})
+    SET(${path} ${ret} PARENT_SCOPE)
+endfunction()
+
 # wasmedge
-file(STRINGS "${PROJECT_SOURCE_DIR}/cmake_config.txt " wasmedge_lib_fpath LIMIT_COUNT 1 REGEX "wasmedge_lib_fpath ?")
-string(REGEX REPLACE "wasmedge_lib_fpath " "" wasmedge_lib_fpath ${wasmedge_lib_fpath})
+load_cmake_config(wasmedge_lib_fpath)
 message(STATUS "wasmedge_lib_fpath: " ${wasmedge_lib_fpath})
 
-file(STRINGS "${PROJECT_SOURCE_DIR}/cmake_config.txt " wasmedge_lib_incpath LIMIT_COUNT 1 REGEX "wasmedge_lib_incpath ?")
-string(REGEX REPLACE "wasmedge_lib_incpath " "" wasmedge_lib_incpath ${wasmedge_lib_incpath})
+load_cmake_config(wasmedge_lib_incpath)
 message(STATUS "wasmedge_lib_incpath: " ${wasmedge_lib_incpath})
 
 
