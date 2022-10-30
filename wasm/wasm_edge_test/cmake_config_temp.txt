@@ -1,0 +1,2 @@
+wasmedge_lib_fpath C:/Program Files/WasmEdge/lib/wasmedge_c.lib
+wasmedge_lib_incpath C:/Program Files/WasmEdge/include

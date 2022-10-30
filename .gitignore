@@ -1,3 +1,4 @@
 rust_bench/target/
 rust_bench/test
 cpp/build/
+wasm/wasm_edge_test/build
