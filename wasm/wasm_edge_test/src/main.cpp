@@ -1,5 +1,6 @@
 #include <wasmedge/wasmedge.h>
 #include <stdio.h>
+
 int main(int Argc, const char* Argv[]) {
   /* Create the configure context and add the WASI support. */
   /* This step is not necessary unless you need WASI support. */
@@ -26,5 +27,5 @@ int main(int Argc, const char* Argv[]) {
   WasmEdge_VMDelete(VMCxt);
   WasmEdge_ConfigureDelete(ConfCxt);
   WasmEdge_StringDelete(FuncName);
-  return 0;
+  return 1;
 }
